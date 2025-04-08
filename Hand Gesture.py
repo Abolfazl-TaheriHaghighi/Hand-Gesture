@@ -1,5 +1,6 @@
 import cv2
 import mediapipe as mp # type: ignore
+import math
 
 Cap = cv2.VideoCapture(0)
 mpHands = mp.solutions.hands
@@ -34,6 +35,9 @@ while True:
             cv2.circle(img, (x2, y2), 6, (185, 4 , 0), cv2.FILLED)
             cv2.circle(img, (cx, cy), 6, (185, 4 , 0), cv2.FILLED)
             cv2.line(img , (x1, y1), (x2 , y2), (255 , 255 , 0), 2)
+
+            Distance = int(math.hypot(x2 - x1 , y2 - y1))
+            #print(Distance)
 
 
 
