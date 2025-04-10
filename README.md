@@ -28,7 +28,9 @@ pip install opencv-python mediapipe pycaw comtypes numpy
 
 ## ▶️ How to Run
 
-```python hand_volume_control.py```
+```bash
+python hand_volume_control.py
+```
 
 ---
 
