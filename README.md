@@ -22,6 +22,8 @@ This project lets you **control your Windows system volume** using just your han
 Install all dependencies via pip:
 ```bash
 pip install opencv-python mediapipe pycaw comtypes numpy
+```
+
 ---
 
 ## ▶️ How to Run
